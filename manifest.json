@@ -1,0 +1,23 @@
+{
+  "name": "Bitcoin",
+  "short_name": "Bitcoin",
+  "description": "As simple as sending a text.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#424242",
+  "background_color": "#424242",
+  "orientation":"portrait",
+  "icons": [
+    {
+      "src": "images/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

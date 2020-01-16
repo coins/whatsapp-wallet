@@ -1,0 +1,14 @@
+<script type="module">
+    import { BitcoinWallet } from './bitcoin.js';
+
+
+	const wallet = BitcoinWallet.generate(true);
+	console.log('address', wallet.address);
+
+	wallet.onBalance(balance => console.log('balance',balance));
+	wallet.onTransaction(transaction => console.log('transaction',transaction));
+	wallet.onExchangeRate(exchangeRate => console.log('exchangeRate', exchangeRate));
+
+	// wallet.sendTransaction('< HEX transaction >');
+
+</script>

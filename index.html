@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Bitcoin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta property="og:title" content="Bitcoin">
+    <meta property="og:description" content="As simple as texting.">
+    <meta property="og:image" content="images/icon-512x512.png">
+    <link rel="shortcut icon" type="image/x-icon" href="images/icon-192x192.png">
+    <meta name="description" content="As simple as texting.">
+    <!-- Homescreen icons -->
+    <link rel="apple-touch-icon" sizes="144x144" href="images/icon-144x144.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body translate="no">
+    <!-- 
+
+        Home Screen
+        
+     -->
+    <div class="header">
+        <a class="icon-button">
+            <svg class="icon">
+                <use xlink:href="#ic-menu" />
+            </svg>
+        </a>
+        <div class="grow"></div>
+        <div class="balance">
+            <div class="balance--fiat">--.-</div>
+            <div class="balance--btc"></div>
+        </div>
+    </div>
+    <!--     
+    <div class="message--container">
+        <input class="message--input" placeholder="What is this payment for?">
+    </div> -->
+    <div class="tx-value--container">
+        <div class="tx-value--fiat">$0.00</div>
+        <div class="tx-value--btc">BTC 0.000000</div>
+    </div>
+    <div class="tx-value--keyboard">
+        <a>1</a>
+        <a>2</a>
+        <a>3</a>
+        <a>4</a>
+        <a>5</a>
+        <a>6</a>
+        <a>7</a>
+        <a>8</a>
+        <a>9</a>
+        <a>.</a>
+        <a>0</a>
+        <a>&lt;</a>
+    </div>
+    <div class="toolbar">
+        <a id="btn-request" class="button shadow-1">Request</a>
+        <button class="scan-button shadow-1">
+            <svg class="icon">
+                <use xlink:href="#ic-scan" />
+            </svg>
+        </button>
+        <a id="btn-pay" class="button shadow-1">Pay</a>
+    </div>
+    <!-- 
+
+        Receive Screen
+        
+     -->
+    <div class="receive--popup">
+        <div class="receive-header">
+            You Received Bitcoins
+        </div>
+        <div class="receive-value--fiat">$3.00</div>
+        <div class="receive-value--btc">0.002 BTC</div>
+        <div class="receive--button-container">
+            <button class="receive--button">
+                Great!
+            </button>
+        </div>
+    </div>
+    <!-- 
+
+        Request Screen
+        
+     -->
+    <div class="request--popup">
+        <div class="request-header">
+            <div class="request-header--left">
+                <svg class="icon request--decline">
+                    <use xlink:href="#ic-close" />
+                </svg>
+            </div>
+            <div class="request-header--center">
+                Bitcoin Request
+            </div>
+            <div class="request-header--right">
+            </div>
+        </div>
+        <div class="request-amount--fiat">-.--</div>
+        <div class="request-amount--crypto"></div>
+        <div class="request--button-container">
+            <button class="request--button">
+                Pay Now
+            </button>
+        </div>
+    </div>
+</body>
+<style>
+</style>
+<svg style="display: none">
+    <g id="ic-menu">
+        <path d="M0 0h24v24H0z" fill="none" />
+        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+    </g>
+    <g id="ic-scan">
+        <path d="M3 5v4h2V5h4V3H5c-1.1 0-2 .9-2 2zm2 10H3v4c0 1.1.9 2 2 2h4v-2H5v-4zm14 4h-4v2h4c1.1 0 2-.9 2-2v-4h-2v4zm0-16h-4v2h4v4h2V5c0-1.1-.9-2-2-2z" />
+    </g>
+    <g id="ic-close">
+        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+        <path d="M0 0h24v24H0z" fill="none" />
+    </g>
+</svg>
+<!-- <script src="ui/clipboard.js"></script> -->
+<script type="module" src="script.js"></script>
+
+</html>
